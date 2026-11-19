@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Products - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro -->
+        <div class="page-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+            <div>
+                <h1 class="page-title">Optical Collection</h1>
+                <p class="page-subtitle">Premium frames, sunglasses, lenses and accessories curated for you.</p>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px;">
+            <!-- Product 1 -->
+            <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                    <svg viewBox="0 0 500 220" width="140" height="65">
+                        <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                        <ellipse cx="145" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                        <path d="M 210 120 L 235 120" stroke="#173347" stroke-width="16" stroke-linecap="round"/>
+                        <ellipse cx="300" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                        <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary);">Eyeglasses</span>
+                    <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 4px 0;">Classic Everyday Frame</h4>
+                    <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Lightweight acetate</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 1,850</span>
+                    <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                    <svg viewBox="0 0 500 220" width="140" height="65">
+                        <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                        <ellipse cx="145" cy="120" rx="65" ry="50" fill="#2d4a5e" stroke="#173347" stroke-width="16"/>
+                        <path d="M 210 115 Q 222 108 235 115" stroke="#173347" stroke-width="16" fill="none" stroke-linecap="round"/>
+                        <ellipse cx="300" cy="120" rx="65" ry="50" fill="#2d4a5e" stroke="#173347" stroke-width="16"/>
+                        <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary);">Sunglasses</span>
+                    <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 4px 0;">UV protection</h4>
+                    <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Polarized UVA/UVB</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 2,400</span>
+                    <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                    <svg viewBox="0 0 500 220" width="140" height="65">
+                        <circle cx="160" cy="110" r="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="8"/>
+                        <circle cx="280" cy="110" r="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="8"/>
+                    </svg>
+                </div>
+                <div>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary);">Contact lenses</span>
+                    <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 4px 0;">Daily lens pack</h4>
+                    <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Comfort & clarity</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 980</span>
+                    <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                    <svg viewBox="0 0 500 220" width="140" height="65">
+                        <rect x="150" y="70" width="60" height="90" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="8"/>
+                        <rect x="230" y="80" width="90" height="80" rx="8" fill="#fde68a" stroke="#d97706" stroke-width="8"/>
+                    </svg>
+                </div>
+                <div>
+                    <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary);">Accessories</span>
+                    <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 4px 0;">Cleaning kit</h4>
+                    <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Anti-fog spray & cloth</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 350</span>
+                    <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

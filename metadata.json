@@ -1,0 +1,6 @@
+{
+  "name": "OpticalCare NetBeans Project",
+  "description": "Beginner-friendly Apache NetBeans JSP, Servlet, and JDBC version of the OpticalCare Store Management System with interactive live preview and ZIP export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

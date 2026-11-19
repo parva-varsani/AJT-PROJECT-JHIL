@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpticalCare - Store Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Page Intro Header (Image 1) -->
+        <div class="page-header">
+            <h1 class="page-title">Clear vision. Everyday confidence.</h1>
+            <p class="page-subtitle">Find eyewear that fits your style, comfort, and prescription needs.</p>
+        </div>
+
+        <!-- Hero Card (Image 1) -->
+        <section class="hero-card">
+            <div class="hero-content">
+                <div class="hero-tagline">SEE THE WORLD</div>
+                <h2 class="hero-heading">A little clearer.</h2>
+                <p class="hero-desc">Explore eyeglasses, sunglasses and optical essentials.</p>
+                <a href="products.html" class="btn-teal">Browse collection</a>
+            </div>
+            <div class="hero-illustration">
+                <!-- Eyeglass Graphic from Image 1 -->
+                <svg viewBox="0 0 500 220" width="300" height="135">
+                    <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                    <ellipse cx="145" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                    <path d="M 210 120 L 235 120" stroke="#173347" stroke-width="16" stroke-linecap="round"/>
+                    <ellipse cx="300" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                    <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SHOP BY CATEGORY SECTION (Image 1) -->
+        <section>
+            <h3 class="section-title">SHOP BY CATEGORY</h3>
+            <div class="category-grid">
+                <!-- Eyeglasses -->
+                <a href="products.html?category=Eyeglasses" class="category-card">
+                    <div>
+                        <div class="category-title">Eyeglasses</div>
+                        <div class="category-desc">Everyday frames</div>
+                    </div>
+                    <div class="category-icon-box icon-box-teal">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="8"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Sunglasses -->
+                <a href="products.html?category=Sunglasses" class="category-card">
+                    <div>
+                        <div class="category-title">Sunglasses</div>
+                        <div class="category-desc">UV protection</div>
+                    </div>
+                    <div class="category-icon-box icon-box-yellow">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Contact lenses -->
+                <a href="products.html?category=Contact+lenses" class="category-card">
+                    <div>
+                        <div class="category-title">Contact lenses</div>
+                        <div class="category-desc">Comfort & clarity</div>
+                    </div>
+                    <div class="category-icon-box icon-box-blue">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Accessories -->
+                <a href="products.html?category=Accessories" class="category-card">
+                    <div>
+                        <div class="category-title">Accessories</div>
+                        <div class="category-desc">Care essentials</div>
+                    </div>
+                    <div class="category-icon-box icon-box-pink">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- FEATURED ITEMS -->
+        <section style="margin-top: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+                <h3 class="section-title" style="margin-bottom: 0;">FEATURED ITEMS</h3>
+                <a href="products.html" style="color: var(--color-teal-primary); font-weight: 600; text-decoration: none;">View all &rarr;</a>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px;">
+                <!-- Product Card 1 -->
+                <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                        <svg viewBox="0 0 500 220" width="140" height="65">
+                            <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                            <ellipse cx="145" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                            <path d="M 210 120 L 235 120" stroke="#173347" stroke-width="16" stroke-linecap="round"/>
+                            <ellipse cx="300" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="16"/>
+                            <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary); letter-spacing: 0.5px;">Eyeglasses</span>
+                        <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 6px 0;">Classic Everyday Frame</h4>
+                        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Comfortable lightweight acetate</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 1,850</span>
+                        <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                        <svg viewBox="0 0 500 220" width="140" height="65">
+                            <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                            <ellipse cx="145" cy="120" rx="65" ry="50" fill="#2d4a5e" stroke="#173347" stroke-width="16"/>
+                            <path d="M 210 115 Q 222 108 235 115" stroke="#173347" stroke-width="16" fill="none" stroke-linecap="round"/>
+                            <ellipse cx="300" cy="120" rx="65" ry="50" fill="#2d4a5e" stroke="#173347" stroke-width="16"/>
+                            <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="15" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary); letter-spacing: 0.5px;">Sunglasses</span>
+                        <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 6px 0;">UV protection</h4>
+                        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Polarized UVA/UVB defense</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 2,400</span>
+                        <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                        <svg viewBox="0 0 500 220" width="140" height="65">
+                            <circle cx="160" cy="110" r="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="8"/>
+                            <circle cx="280" cy="110" r="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="8"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary); letter-spacing: 0.5px;">Contact lenses</span>
+                        <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 6px 0;">Daily lens pack</h4>
+                        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Comfort & all-day hydration</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 980</span>
+                        <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="card-box" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="background-color: var(--color-teal-soft); border-radius: var(--radius-sm); padding: 24px; display: flex; justify-content: center; align-items: center; margin-bottom: 14px;">
+                        <svg viewBox="0 0 500 220" width="140" height="65">
+                            <rect x="150" y="70" width="60" height="90" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="8"/>
+                            <rect x="230" y="80" width="90" height="80" rx="8" fill="#fde68a" stroke="#d97706" stroke-width="8"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-teal-primary); letter-spacing: 0.5px;">Accessories</span>
+                        <h4 style="font-size: 1.15rem; font-weight: 700; margin: 4px 0 6px 0;">Cleaning kit</h4>
+                        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 14px;">Anti-fog spray & cloth</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-teal-primary);">₹ 350</span>
+                        <a href="product-details.html" class="btn-navy" style="padding: 6px 14px; font-size: 0.85rem;">View details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+            <p style="margin-top: 4px; font-size: 0.8rem; color: #8898aa;">
+                Team Members: Raval Jhil (92610103006) &bull; Kachhadiya Zarna (92610103017) &bull; Jani Neev (92610103014)
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

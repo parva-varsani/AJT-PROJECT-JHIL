@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro (Image 3) -->
+        <div class="page-header" style="text-align: left; max-width: 680px; margin: 0 auto 24px auto;">
+            <h1 class="page-title">Create your account</h1>
+            <p class="page-subtitle">A few details help us keep your orders and prescriptions together.</p>
+        </div>
+
+        <div class="auth-wrapper">
+            <div class="auth-card" style="max-width: 680px;">
+
+                <div class="auth-header">
+                    <h2 class="auth-title">Customer Registration</h2>
+                </div>
+
+                <form onsubmit="event.preventDefault(); window.location.href='customer-dashboard.html';">
+                    <!-- 2-Column Form Grid (Image 3) -->
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Full name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" placeholder="Enter phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Create a password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-teal btn-full">Create account</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p><a href="login.html">Already registered? Sign in</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

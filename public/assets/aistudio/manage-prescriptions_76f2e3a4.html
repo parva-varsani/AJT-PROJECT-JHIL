@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription management - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="admin-dashboard.html" class="nav-link">Admin Dashboard</a></li>
+            <li><a href="manage-inventory.html" class="nav-link">Inventory</a></li>
+            <li><a href="manage-prescriptions.html" class="nav-link active">Prescriptions</a></li>
+            <li><a href="manage-orders.html" class="nav-link">Orders</a></li>
+            <li><a href="billing.html" class="nav-link">Billing</a></li>
+            <li><a href="index.html" class="btn-login" style="background:#fecaca; color:#7f1d1d;">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro (Image 10) -->
+        <div class="page-header">
+            <h1 class="page-title">Prescription management</h1>
+            <p class="page-subtitle">Access should be limited to authorized store staff.</p>
+        </div>
+
+        <!-- Prescriptions Table Card (Image 10) -->
+        <div class="table-card">
+            <div class="table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Record</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th style="text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 700; color: #162a36;">RX-0021</td>
+                            <td>Customer A</td>
+                            <td>02 Nov 2026</td>
+                            <td><span class="status-pill status-submitted">Submitted</span></td>
+                            <td style="text-align: right;"><button class="btn-navy" onclick="alert('Record RX-0021 details: Dr. R.K. Mehta | OD: -1.50/-0.50x90 | OS: -1.25/-0.25x85');">Open record</button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700; color: #162a36;">RX-0018</td>
+                            <td>Customer B</td>
+                            <td>29 Oct 2026</td>
+                            <td><span class="status-pill status-reviewed">Reviewed</span></td>
+                            <td style="text-align: right;"><button class="btn-navy" onclick="alert('Record RX-0018 details: Dr. Sneha Desai | OD: -2.00/-0.75x85 | OS: -2.00/-0.50x95');">Open record</button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700; color: #162a36;">RX-0014</td>
+                            <td>Customer C</td>
+                            <td>21 Oct 2026</td>
+                            <td><span class="status-pill status-reviewed">Reviewed</span></td>
+                            <td style="text-align: right;"><button class="btn-navy" onclick="alert('Record RX-0014 details: Dr. R.K. Mehta | OD: +1.00/0.00x0 | OS: +1.25/0.00x0');">Open record</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

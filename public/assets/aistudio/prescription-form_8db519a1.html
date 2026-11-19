@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription details - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link active">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro (Image 6) -->
+        <div class="page-header">
+            <h1 class="page-title">Prescription details</h1>
+            <p class="page-subtitle">Enter values as provided by your eye-care professional.</p>
+        </div>
+
+        <!-- Prescription Form Card (Image 6) -->
+        <div class="rx-card">
+            <div>
+                <h2 style="font-size: 1.55rem; font-weight: 700; color: var(--color-text-dark); margin-bottom: 4px;">Prescription form</h2>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">Example layout only &mdash; enter your own prescription values.</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); alert('Prescription saved successfully! Store staff will review it for your upcoming orders.');">
+                
+                <!-- Parameters Table (Image 6) -->
+                <table class="rx-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;">Parameter</th>
+                            <th style="width: 33%;">Right eye (OD)</th>
+                            <th style="width: 33%;">Left eye (OS)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rx-param-label">Sphere (SPH)</td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                        </tr>
+                        <tr>
+                            <td class="rx-param-label">Cylinder (CYL)</td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                        </tr>
+                        <tr>
+                            <td class="rx-param-label">Axis</td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                        </tr>
+                        <tr>
+                            <td class="rx-param-label">Addition (ADD)</td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                            <td><input type="text" class="form-control" placeholder="Enter value"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <button type="submit" class="btn-teal">Save prescription</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

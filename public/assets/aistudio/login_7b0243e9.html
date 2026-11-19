@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer & Staff Login - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login active">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro (Image 2) -->
+        <div class="page-header" style="text-align: left; max-width: 580px; margin: 0 auto 24px auto;">
+            <h1 class="page-title">Welcome back</h1>
+            <p class="page-subtitle">Sign in to manage your optical store purchases.</p>
+        </div>
+
+        <div class="auth-wrapper">
+            <div class="auth-card">
+
+                <div class="auth-header">
+                    <h2 class="auth-title">Customer Login</h2>
+                </div>
+
+                <!-- Alert error message (hidden by default) -->
+                <div id="loginErrorAlert" class="alert-box alert-error" style="display: none;">
+                    <span id="loginErrorMsg">Invalid email/username or password.</span>
+                </div>
+
+                <form id="unifiedLoginForm" onsubmit="handleUnifiedLogin(event);">
+                    <!-- Email or Username field (allows both customer email and admin username) -->
+                    <div class="form-group">
+                        <label class="form-label" for="loginIdentifier">Email address</label>
+                        <input type="text" id="loginIdentifier" class="form-control" 
+                               placeholder="you@example.com" 
+                               value="customer.a@example.com" required autocomplete="username">
+                    </div>
+
+                    <!-- Password field -->
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label class="form-label" for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="form-control" 
+                               placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" 
+                               value="customer123" required autocomplete="current-password">
+                    </div>
+
+                    <!-- Sign In Button (Teal) -->
+                    <button type="submit" class="btn-teal btn-full">Sign in</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>
+                        <a href="register.html">New customer? Create an account</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Unified Login Logic: Detects Admin vs Customer and redirects accordingly -->
+    <script>
+        function handleUnifiedLogin(e) {
+            e.preventDefault();
+            const identifier = document.getElementById("loginIdentifier").value.trim().toLowerCase();
+            const password = document.getElementById("loginPassword").value.trim();
+            const alertBox = document.getElementById("loginErrorAlert");
+            const alertMsg = document.getElementById("loginErrorMsg");
+
+            // 1. Admin Login Check (admin / admin123 or optician / admin123)
+            if (identifier === "admin" || identifier === "optician") {
+                if (password === "admin123" || password === "") {
+                    sessionStorage.setItem("userRole", "ADMIN");
+                    sessionStorage.setItem("userName", "Admin");
+                    window.location.href = "admin-dashboard.html";
+                    return;
+                } else {
+                    alertBox.style.display = "flex";
+                    alertMsg.innerText = "Incorrect admin password. (Default is admin123)";
+                    return;
+                }
+            }
+
+            // 2. Customer Login Check (checks email / password)
+            if (identifier.includes("@") || identifier.startsWith("customer") || identifier.includes("jhil") || identifier.includes("zarna") || identifier.includes("neev")) {
+                if (password === "customer123" || password === "jhil123" || password === "zarna123" || password === "neev123" || password.length >= 4) {
+                    sessionStorage.setItem("userRole", "CUSTOMER");
+                    sessionStorage.setItem("userName", "Customer A");
+                    window.location.href = "customer-dashboard.html";
+                    return;
+                } else {
+                    alertBox.style.display = "flex";
+                    alertMsg.innerText = "Incorrect customer password. (Default is customer123)";
+                    return;
+                }
+            }
+
+            // Fallback: if username is not recognised
+            alertBox.style.display = "flex";
+            alertMsg.innerText = "User not found. Use 'admin' / 'admin123' for Admin, or customer email for Customer.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details - OpticalCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <span class="brand-badge">OC</span>
+            <div class="brand-text">
+                <span class="brand-name">OpticalCare</span>
+                <span class="brand-sub">STORE MANAGEMENT</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="prescription-form.html" class="nav-link">Prescriptions</a></li>
+            <li><a href="my-orders.html" class="nav-link">My Orders</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <!-- Page Intro (Image 5) -->
+        <div class="page-header">
+            <h1 class="page-title">Product details</h1>
+            <p class="page-subtitle">Review product information before placing an order.</p>
+        </div>
+
+        <!-- 2-Column Product Details Grid (Image 5) -->
+        <div class="product-details-grid">
+
+            <!-- Left: Large Eyeglass Illustration Box -->
+            <div class="product-image-box">
+                <svg viewBox="0 0 500 220" width="100%" height="auto">
+                    <line x1="30" y1="95" x2="75" y2="108" stroke="#173347" stroke-width="16" stroke-linecap="round"/>
+                    <ellipse cx="145" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="18"/>
+                    <path d="M 210 120 L 235 120" stroke="#173347" stroke-width="18" stroke-linecap="round"/>
+                    <ellipse cx="300" cy="120" rx="65" ry="50" fill="none" stroke="#173347" stroke-width="18"/>
+                    <line x1="370" y1="108" x2="415" y2="95" stroke="#173347" stroke-width="16" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <!-- Right: Product Info & Order Form -->
+            <div class="product-info-box">
+                <h2 class="product-info-title">Classic Everyday Frame</h2>
+                <div class="product-info-meta">Eyeglasses &bull; Lightweight acetate</div>
+
+                <div class="product-info-price" id="productPriceDisplay" data-price="1850">
+                    ₹ 1,850
+                </div>
+
+                <p class="product-info-desc">Comfortable frame for everyday use.</p>
+
+                <!-- Bullet Points from Image 5 -->
+                <ul class="product-features-list">
+                    <li>Lightweight design</li>
+                    <li>Multiple size options</li>
+                    <li>Available while stock lasts</li>
+                </ul>
+
+                <form onsubmit="event.preventDefault(); window.location.href='billing.html';">
+                    <div style="margin-bottom: 8px;">
+                        <label class="form-label">Quantity</label>
+                    </div>
+
+                    <div class="order-actions-row">
+                        <input type="number" id="orderQuantity" class="quantity-input" value="1" min="1" max="10">
+                        <button type="submit" class="btn-teal" style="padding: 12px 32px; font-size: 1.05rem;">Add to order</button>
+                    </div>
+
+                    <div style="margin-top: 14px; font-size: 0.95rem; color: #5a6e7c;">
+                        Total Subtotal: <strong id="productSubtotalDisplay" style="color: var(--color-teal-primary);">₹ 1,850.00</strong>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="main-container" style="margin: 0 auto; padding: 0 24px;">
+            <p><strong>OpticalCare Store Management System</strong> &bull; Advanced Java Technology (AJT) Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
